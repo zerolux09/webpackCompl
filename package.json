@@ -1,0 +1,22 @@
+{
+  "name": "excel-course",
+  "version": "1.0.0",
+  "description": "pure JavaScript app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerolux09/webpack.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "yarema dyackiv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zerolux09/webpack/issues"
+  },
+  "homepage": "https://github.com/zerolux09/webpack#readme"
+}
