@@ -5,7 +5,7 @@ import {TimelineMax} from 'gsap';
 import main from './main';
 import preloder from './preloder';
 import Magnetichover from './Magnetic-hover';
-import owlCarousel from './owl-Carousel';
+import owlCarousel from './owl-carousel';
 // import plugin from './plugin';
 
 console.log(main);
