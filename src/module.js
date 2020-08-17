@@ -1,4 +1,4 @@
-console.log('work!');
+// console.log('work!');
 const jquery = require('jquery');
 import 'jquery';
 import {TimelineMax} from 'gsap';
