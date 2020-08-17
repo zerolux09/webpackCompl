@@ -287,15 +287,16 @@
 section {
 	padding-top: 70px;
 	padding-bottom: 70px;
+
+    &::-webkit-scrollbar {
+	  width: 0px;
 }
-&::-webkit-scrollbar {
-	width: 0px;
+    &::-webkit-scrollbar-track {
+	  background: #ffff;
 }
-&::-webkit-scrollbar-track {
-	background: #ffff;
+    &::-webkit-scrollbar-thumb {
+  	background: #222222;
 }
-&::-webkit-scrollbar-thumb {
-	background: #222222;
 }
 .bg_block_first {
 	z-index: 97;
@@ -799,23 +800,23 @@ button {
 		font-family: "Poppins", sans-serif;
 		text-align: center;
 		text-transform: uppercase;
-	}
-	&:hover {
-		.circle {
-			width: 100%;
-			.icon.arrow {
-				background: #fff;
-				-webkit-transform: translate(0.7rem, 0);
-				transform: translate(0.7rem, 0);
-			}
-		}
-		.button-text {
-			color: #fff;
-			margin-left: 40px;
-			letter-spacing: 1px;
-		}
-	}
-}
+	  }
+    &:hover {
+      .circle {
+        width: 100%;
+        .icon.arrow {
+          background: #fff;
+          -webkit-transform: translate(0.7rem, 0);
+          transform: translate(0.7rem, 0);
+        }
+      }
+      .button-text {
+        color: #fff;
+        margin-left: 40px;
+        letter-spacing: 1px;
+      }
+    }
+  }
 .about {
 	position: fixed;
 	width: 100%;
@@ -1099,13 +1100,13 @@ p.author-text {
 			transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
 		}
 	}
-	&:hover {
-		a {
-			&::after {
-				width: 100%;
-			}
-		}
-	}
+    &:hover {
+      a {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
 }
 input {
 	&:-webkit-autofill {
