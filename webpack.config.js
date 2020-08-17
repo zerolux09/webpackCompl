@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
@@ -42,6 +43,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+      }),
     new HTMLWebpackPlugin({
       template: 'index.html',
       minify: {
@@ -71,17 +76,17 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
             options: {
               hmr: isDev,
-              reloadAll: true
-            }
+              reloadAll: true,
+            },
           },
           'css-loader',
-          'sass-loader'
+          'sass-loader',
         ],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: jsLoaders()
+        use: jsLoaders(),
       },
     ],
   },
