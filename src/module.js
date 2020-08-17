@@ -1,6 +1,7 @@
 // console.log('work!');
 const jquery = require('jquery');
 import 'jquery';
+import 'bootstrap';
 import {TimelineMax} from 'gsap';
 import main from './main';
 import plugin from './plugin';
