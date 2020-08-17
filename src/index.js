@@ -5,5 +5,3 @@ import $ from 'jquery';
 import 'bootstrap';
 global.jQuery = $;
 global.$ = $;
-
-// gsap.registerPlugin(MotionPathPlugin, ScrollToPlugin, TextPlugin);
