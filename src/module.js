@@ -4,9 +4,10 @@ import 'jquery';
 import 'bootstrap';
 import {TimelineMax} from 'gsap';
 import main from './main';
-import plugin from './plugin';
+// import plugin from './plugin';
+
 console.log(main);
-plugin();
+// plugin();
 // console.log(jquery);
 jquery();
 const tl = new TimelineMax();

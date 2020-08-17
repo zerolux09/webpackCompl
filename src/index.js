@@ -2,6 +2,8 @@ import './module';
 import './scss/index.scss';
 import 'gsap';
 import $ from 'jquery';
+import 'bootstrap';
 global.jQuery = $;
 global.$ = $;
-import 'bootstrap';
+
+// gsap.registerPlugin(MotionPathPlugin, ScrollToPlugin, TextPlugin);
