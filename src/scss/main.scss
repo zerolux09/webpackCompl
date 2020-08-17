@@ -566,19 +566,24 @@ body {
 	background-position: center center !important;
 }
 .project-1 {
-	background: url("../../src/img/portfolio/1.jpg") no-repeat;
+  background: url("../../src/img/portfolio/1.jpg");
+  background-repeat: no-repeat;
 }
 .project-2 {
-	background: url("../../src/img/portfolio/2.jpg") no-repeat;
+  background: url("../../src/img/portfolio/2.jpg");
+  background-repeat: no-repeat;
 }
 .project-3 {
-	background: url("../../src/img/portfolio/3.jpg") no-repeat;
+  background: url("../../src/img/portfolio/3.jpg");
+  background-repeat: no-repeat;
 }
 .project-4 {
-	background: url("../../src/img/portfolio/4.jpg") no-repeat;
+  background: url("../../src/img/portfolio/4.jpg");
+  background-repeat: no-repeat;
 }
 .project-5 {
-	background: url("../../src/img/portfolio/5.jpg") no-repeat;
+  background: url("../../src/img/portfolio/5.jpg");
+  background-repeat: no-repeat;
 }
 .overlay-bg {
 	padding: 0;
@@ -832,7 +837,7 @@ button {
 	}
 }
 .about-bg {
-	background: url("../../src/img/portfolio/portfolio/3.jpg") center center no-repeat;
+	background: url("../../src/img/portfolio/3.jpg") center center no-repeat;
 	background-size: cover;
 }
 .about-us-text {
@@ -1054,7 +1059,7 @@ p.author-text {
 	}
 }
 .project-detail-1 {
-background:url("../../src/img/portfolio/portfolio/4.jpg")no-repeat;
+background:url("../../src/img/portfolio/4.jpg")no-repeat;
 background-size: cover;
 background-position: center center;
 }
