@@ -79,6 +79,7 @@ module.exports = {
               reloadAll: true,
             },
           },
+          'style-loader',
           'css-loader',
           'sass-loader',
         ],

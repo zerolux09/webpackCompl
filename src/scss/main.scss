@@ -565,21 +565,21 @@ body {
 	background-size: cover !important;
 	background-position: center center !important;
 }
-// .project-1 {
-// 	background: url("../img/portfolio/1.jpg") no-repeat;
-// }
-// .project-2 {
-// 	background: url("../img/portfolio/2.jpg") no-repeat;
-// }
-// .project-3 {
-// 	background: url("../img/portfolio/3.jpg") no-repeat;
-// }
-// .project-4 {
-// 	background: url("../img/portfolio/4.jpg") no-repeat;
-// }
-// .project-5 {
-// 	background: url("../img/portfolio/5.jpg") no-repeat;
-// }
+.project-1 {
+	background: url("../../src/img/portfolio/1.jpg") no-repeat;
+}
+.project-2 {
+	background: url("../../src/img/portfolio/2.jpg") no-repeat;
+}
+.project-3 {
+	background: url("../../src/img/portfolio/3.jpg") no-repeat;
+}
+.project-4 {
+	background: url("../../src/img/portfolio/4.jpg") no-repeat;
+}
+.project-5 {
+	background: url("../../src/img/portfolio/5.jpg") no-repeat;
+}
 .overlay-bg {
 	padding: 0;
 	position: absolute;
@@ -832,7 +832,7 @@ button {
 	}
 }
 .about-bg {
-	background: url("./img/promo.jpg") center center no-repeat;
+	background: url("../../src/img/portfolio/portfolio/3.jpg") center center no-repeat;
 	background-size: cover;
 }
 .about-us-text {
@@ -1054,7 +1054,7 @@ p.author-text {
 	}
 }
 .project-detail-1 {
-background:url("")no-repeat;
+background:url("../../src/img/portfolio/portfolio/4.jpg")no-repeat;
 background-size: cover;
 background-position: center center;
 }
