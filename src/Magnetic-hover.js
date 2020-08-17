@@ -41,7 +41,7 @@ import {TweenMax} from 'gsap';
             TweenMax.to(span, 0.3, {
                 x: (relX - boundingRect.width / 2) / boundingRect.width * force,
                 y: (relY - boundingRect.height / 2)/boundingRect.height * force,
-                ease: Power2.easeOut
+                ease: power2.easeOut
             })
         }
 

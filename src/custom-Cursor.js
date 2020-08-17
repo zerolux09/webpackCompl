@@ -1,7 +1,10 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 import jQuery from 'jQuery';
 import {TweenMax} from 'gsap';
+import CustomCursor from 'custom-cursor';
 jQuery();
+console.log(CustomCursor);
 // --------------------------------------------------
 // Custom Cursor
 // --------------------------------------------------
