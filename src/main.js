@@ -33,20 +33,4 @@ console.log(Ease);
     // AOS.init({
     //     once: true,
     // })
-
     })(jQuery)
-
-
-
-
- 
-
-
- 
-
-
-
-
- 
-
-
