@@ -203,17 +203,18 @@
     -o-animation: loader-middle 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
     -webkit-animation: loader-middle 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
     animation-delay: 1200ms; }
+
 .ubuntu {
 	font-family: "Ubuntu", sans-serif;
 	font-family: "Ubuntu", sans-serif;
 }
-.loader-middle.loaded {
-	width: 100%;
-	opacity: 0;
-	&::after {
-		opacity: 0;
-	}
-}
+// .loader-middle.loaded {
+// 	width: 100%;
+// 	opacity: 0;
+// 	&::after {
+// 		opacity: 0;
+// 	}
+// }
 .c-scroll-icon {
 	z-index: 12;
 	position: fixed;
@@ -831,7 +832,7 @@ button {
 	}
 }
 .about-bg {
-	background: url("../img/promo.jpg") center center no-repeat;
+	background: url("./img/promo.jpg") center center no-repeat;
 	background-size: cover;
 }
 .about-us-text {
