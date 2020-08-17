@@ -15,6 +15,9 @@ Git
 	Development
 		2.0.2
 		1 -----------------
+// import {TimelineMax} from 'gsap';
+// import {Ease} from 'gsap';
+// import {TweenMax} from 'gsap';
 		
 
 

@@ -1,6 +1,12 @@
-    // --------------------------------------------------
-    // Animation on Magnetic hover
-    // --------------------------------------------------
+/* eslint-disable no-invalid-this */
+/* eslint-disable no-undef */
+import {TweenMax} from 'gsap';
+// import {Ease} from 'gsap';
+
+// console.log(Ease);
+// --------------------------------------------------
+// Animation on Magnetic hover
+// --------------------------------------------------
     class MagneticCursor {
         constructor() {
             this.links = [...document.querySelectorAll('.c-magnetic')]

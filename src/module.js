@@ -1,12 +1,17 @@
-// console.log('work!');
 const jquery = require('jquery');
 import 'jquery';
 import 'bootstrap';
 import {TimelineMax} from 'gsap';
 import main from './main';
+import preloder from './preloder';
+import Magnetichover from './Magnetic-hover';
+import owlCarousel from './owl-Carousel';
 // import plugin from './plugin';
 
 console.log(main);
+console.log(preloder);
+console.log(Magnetichover);
+console.log(owlCarousel);
 // plugin();
 // console.log(jquery);
 jquery();
