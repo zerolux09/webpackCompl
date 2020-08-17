@@ -1,22 +1,15 @@
-/* eslint-disable no-const-assign */
-/* eslint-disable no-new-wrappers */
-/* eslint-disable no-sparse-arrays */
-/* eslint-disable no-unexpected-multiline */
-/* eslint-disable prefer-const */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-useless-escape */
-/* eslint-disable getter-return */
-/* eslint-disable no-empty */
 /* eslint-disable no-tabs */
+/* eslint-disable prefer-const */
+/* eslint-disable no-useless-escape */
 /* eslint-disable prefer-spread */
 /* eslint-disable prefer-rest-params */
+/* eslint-disable no-new-wrappers */
+/* eslint-disable guard-for-in */
 /* eslint-disable no-undef */
 /* eslint-disable new-cap */
-/* eslint-disable no-throw-literal */
-/* eslint-disable no-var */
-/* eslint-disable guard-for-in */
-/* eslint-disable max-len */
 /* eslint-disable no-invalid-this */
+
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -201,7 +194,7 @@ b.push(this.normalize(b.length / 2, !0)),
         filter: ['width', 'items', 'settings'],
         run: function() {
           for (
-            var a = this.settings.rtl ? 1 : -1,
+            let a = this.settings.rtl ? 1 : -1,
               b = this._clones.length + this._items.length,
               c = -1,
               d = 0,
@@ -1114,7 +1107,7 @@ b.type === e.Type.State &&
     (a.fn.owlCarousel.Constructor = e);
 })(window.Zepto || window.jQuery, window, document),
   (function(a, b, c, d) {
-    var e = function(b) {
+    const e = function(b) {
       (this._core = b),
         (this._interval = null),
         (this._visible = null),
@@ -1154,7 +1147,7 @@ b.type === e.Type.State &&
       (a.fn.owlCarousel.Constructor.Plugins.AutoRefresh = e);
   })(window.Zepto || window.jQuery, window, document),
   (function(a, b, c, d) {
-    var e = function(b) {
+    const e = function(b) {
       (this._core = b),
         (this._loaded = []),
         (this._handlers = {
@@ -1168,16 +1161,16 @@ b.type === e.Type.State &&
                   'initialized' == b.type)
               ) {
                 const c = this._core.settings;
-                  let e = (c.center && Math.ceil(c.items / 2)) || c.items;
-                  let f = (c.center && -1 * e) || 0;
-                  let g =
-                    (b.property && b.property.value !== d ?
-                      b.property.value :
-                      this._core.current()) + f;
-                  const h = this._core.clones().length;
-                  const i = a.proxy(function(a, b) {
-                    this.load(b);
-                  }, this);
+                let e = (c.center && Math.ceil(c.items / 2)) || c.items;
+                let f = (c.center && -1 * e) || 0;
+                let g =
+                  (b.property && b.property.value !== d ?
+                    b.property.value :
+                    this._core.current()) + f;
+                const h = this._core.clones().length;
+                const i = a.proxy(function(a, b) {
+                  this.load(b);
+                }, this);
                 for (
                   c.lazyLoadEager > 0 &&
                   ((e += c.lazyLoadEager),
@@ -1185,10 +1178,10 @@ b.type === e.Type.State &&
                   f++ < e;
 
                 ) {
-this.load(h / 2 + this._core.relative(g)),
+                  this.load(h / 2 + this._core.relative(g)),
                     h && a.each(this._core.clones(this._core.relative(g)), i),
                     g++;
-}
+                }
               }
             },
             this,
@@ -1266,7 +1259,7 @@ this.load(h / 2 + this._core.relative(g)),
       (a.fn.owlCarousel.Constructor.Plugins.Lazy = e);
   })(window.Zepto || window.jQuery, window, document),
   (function(a, b, c, d) {
-    var e = function(c) {
+    const e = function(c) {
       (this._core = c),
         (this._previousHeight = null),
         (this._handlers = {
@@ -1334,7 +1327,7 @@ this.load(h / 2 + this._core.relative(g)),
       (a.fn.owlCarousel.Constructor.Plugins.AutoHeight = e);
   })(window.Zepto || window.jQuery, window, document),
   (function(a, b, c, d) {
-    var e = function(b) {
+    const e = function(b) {
       (this._core = b),
         (this._videos = {}),
         (this._playing = null),
@@ -1534,7 +1527,7 @@ return l(h.attr(i)), h.remove(), !1;
       (a.fn.owlCarousel.Constructor.Plugins.Video = e);
   })(window.Zepto || window.jQuery, window, document),
   (function(a, b, c, d) {
-    var e = function(b) {
+    const e = function(b) {
       (this.core = b),
         (this.core.options = a.extend({}, e.Defaults, this.core.options)),
         (this.swapping = !0),
@@ -1611,7 +1604,7 @@ return l(h.attr(i)), h.remove(), !1;
       (a.fn.owlCarousel.Constructor.Plugins.Animate = e);
   })(window.Zepto || window.jQuery, window, document),
   (function(a, b, c, d) {
-    var e = function(b) {
+    const e = function(b) {
       (this._core = b),
         (this._call = null),
         (this._time = 0),
@@ -1716,7 +1709,7 @@ return l(h.attr(i)), h.remove(), !1;
   })(window.Zepto || window.jQuery, window, document),
   (function(a, b, c, d) {
     'use strict';
-    var e = function(b) {
+    const e = function(b) {
       (this._core = b),
         (this._initialized = !1),
         (this._pages = []),
@@ -1982,7 +1975,7 @@ break;
   })(window.Zepto || window.jQuery, window, document),
   (function(a, b, c, d) {
     'use strict';
-    var e = function(c) {
+    const e = function(c) {
       (this._core = c),
         (this._hashes = {}),
         (this.$element = this._core.$element),
@@ -2056,8 +2049,8 @@ break;
     function f(a) {
       return e(a, !0);
     }
-    var g = a('<support>').get(0).style;
-      var h = 'Webkit Moz O ms'.split(' ');
+    const g = a('<support>').get(0).style;
+      const h = 'Webkit Moz O ms'.split(' ');
       const i = {
         transition: {
           end: {
