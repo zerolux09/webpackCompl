@@ -1,0 +1,135 @@
+@keyframes showLine {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showLine {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes loader-middle {
+  0% {
+    left: -100%;
+    background: #fff;
+  }
+  100% {
+    left: 100%;
+    background: #fff;
+  }
+}
+
+@-webkit-keyframes loader-middle {
+  0% {
+    left: -100%;
+    background: #fff;
+  }
+  100% {
+    left: 100%;
+    background: #fff;
+  }
+}
+
+#preloader-wapper {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#preloader-wapper::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  background: #09070c;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transition: height 0.4s;
+  -moz-transition: height 0.4s;
+  -ms-transition: height 0.4s;
+  -o-transition: height 0.4s;
+}
+
+#preloader-wapper::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  background: #09070c;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transition: height 0.4s;
+  -moz-transition: height 0.4s;
+  -ms-transition: height 0.4s;
+  -o-transition: height 0.4s;
+  top: auto;
+  bottom: 0;
+}
+
+.loader-middle {
+  position: relative;
+  width: 50%;
+  height: 1px;
+  overflow: hidden;
+  margin: auto;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  z-index: 555;
+}
+
+.loader-middle::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  left: 50%;
+  background: #793be8;
+  animation: showLine 700ms ease-in-out 0s forwards;
+  -o-animation: showLine 700ms ease-in-out 0s forwards;
+  -webkit-animation: showLine 700ms ease-in-out 0s forwards;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.loader-middle::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -100px;
+  top: 0;
+  animation: loader-middle 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+  -o-animation: loader-middle 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+  -webkit-animation: loader-middle 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+/*# sourceMappingURL=preloder.css.map */

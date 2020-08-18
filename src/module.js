@@ -5,16 +5,20 @@ import {TimelineMax} from 'gsap';
 import main from './main';
 import preloder from './preloder';
 import fullMenu from './full-menu';
-// import Magnetichover from './Magnetic-hover';
+import pageHref from './page-href';
+import projectsingleA from './project-singleA';
+import revealBlock from './reveal-Block';
+import magnetichover from './magnetic-hover';
 // import owlcarousel from './owl-carousel';
 // import customcursor from './custom-Cursor';
-
-// import plugin from './plugin';
 
 console.log(main);
 console.log(preloder);
 console.log(fullMenu);
-// console.log(Magnetichover);
+console.log(pageHref);
+console.log(projectsingleA);
+console.log(revealBlock);
+console.log(magnetichover);
 // console.log(customcursor);
 // console.log(owlcarousel);
 // plugin();

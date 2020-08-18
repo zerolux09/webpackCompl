@@ -3,35 +3,20 @@
 // --------------------------------------------------
 // Animation on full menu
 // --------------------------------------------------
-import {TweenMax} from 'gsap';
-import {Ease} from 'gsap';
-// import {Expo} from 'gsap';
+import {TweenMax, Expo, Power4} from 'gsap';
 import {TimelineMax} from 'gsap';
-// import 'gsap';
 import jQuery from 'jQuery';
 import {gsap} from 'gsap';
 import {CSSRulePlugin} from 'gsap/CSSRulePlugin';
-import {Draggable} from 'gsap/Draggable';
 import {EaselPlugin} from 'gsap/EaselPlugin';
-import {MotionPathPlugin} from 'gsap/MotionPathPlugin';
-import {PixiPlugin} from 'gsap/PixiPlugin';
-import {TextPlugin} from 'gsap/TextPlugin';
-import {ScrollToPlugin} from 'gsap/ScrollToPlugin';
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
 gsap.registerPlugin(
   CSSRulePlugin,
-  Draggable,
   EaselPlugin,
-  MotionPathPlugin,
-  PixiPlugin,
-  TextPlugin,
-  ScrollToPlugin,
-  ScrollTrigger,
-  Ease,
+  TimelineMax
 );
 jQuery();
-
-console.log(MotionPathPlugin);
+console.log(Expo);
+console.log(Power4);
 TweenMax.to('.menu', 1, {
     opacity: 0,
 })
