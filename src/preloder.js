@@ -1,4 +1,5 @@
 import jQuery from 'jQuery';
+jQuery();
 
 (function($) {
 // USE STRICT

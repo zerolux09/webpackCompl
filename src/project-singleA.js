@@ -2,12 +2,14 @@ import jQuery from 'jQuery'
 import TweenMax from 'gsap'
 jQuery();
 console.log(TweenMax);
-(function($) {
-// USE STRICT
-'use strict'
+
 // --------------------------------------------------
 // Animation on about/project-single
 // --------------------------------------------------
+
+(function($) {
+// USE STRICT
+'use strict'
 
 const wind = $(window)
 
