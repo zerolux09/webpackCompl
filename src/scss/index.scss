@@ -95,9 +95,11 @@
 }
 .loader-middle.loaded {
 	width: 100%;
-	opacity: 0;
+    opacity: 0;
+    z-index: -1;
 	&::after {
 		opacity: 0;
+        display: none;
 	}
 }
 .c-scroll-icon {
