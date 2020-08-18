@@ -4,11 +4,12 @@ import 'gsap';
 import $ from 'jquery';
 import 'bootstrap';
 import Logo from './img/logo.png';
-import image1 from './img/portfolio/1.png';
-import image2 from './img/portfolio/2.png';
-import image3 from './img/portfolio/3.png';
-import image4 from './img/portfolio/4.png';
-import image5 from './img/portfolio/5.png';
+
+import Image from './img/portfolio/1.png';
+import ImageTwo from './img/portfolio/2.png';
+import ImageThree from './img/portfolio/3.png';
+import ImageFour from './img/portfolio/4.png';
+import ImageFive from './img/portfolio/5.png';
 
 
   function component() {
@@ -19,27 +20,27 @@ import image5 from './img/portfolio/5.png';
     // element.classList.add('hello');
     global.jQuery = $;
     global.$ = $;
-   // Add the image to our existing div.
+   // Add the Image to our existing div.
    const myLogo = new Image();
-   const image1 = new Image();
-   const image2 = new Image();
-   const image3 = new Image();
-   const image4 = new Image();
-   const image5 = new Image();
+   const Image1 = new Image();
+   const Image2 = new Image();
+   const Image3 = new Image();
+   const Image4 = new Image();
+   const Image5 = new Image();
 
    myLogo.src = Logo;
-   image1.src = image1;
-   image2.src = image2;
-   image3.src = image3;
-   image4.src = image4;
-   image5.src = image5;
+   Image1.src = Image;
+   Image2.src = ImageTwo;
+   Image3.src = ImageThree;
+   Image4.src = ImageFour;
+   Image5.src = ImageFive;
 
    element.appendChild(myLogo);
-   element.appendChild(image1);
-   element.appendChild(image2);
-   element.appendChild(image3);
-   element.appendChild(image4);
-   element.appendChild(image5);
+   element.appendChild(Image1);
+   element.appendChild(Image2);
+   element.appendChild(Image3);
+   element.appendChild(Image4);
+   element.appendChild(Image5);
 
     return element;
   }
