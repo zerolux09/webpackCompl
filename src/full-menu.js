@@ -1,7 +1,37 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-invalid-this */
 // --------------------------------------------------
 // Animation on full menu
 // --------------------------------------------------
+import {TweenMax} from 'gsap';
+import {Ease} from 'gsap';
+// import {Expo} from 'gsap';
+import {TimelineMax} from 'gsap';
+// import 'gsap';
+import jQuery from 'jQuery';
+import {gsap} from 'gsap';
+import {CSSRulePlugin} from 'gsap/CSSRulePlugin';
+import {Draggable} from 'gsap/Draggable';
+import {EaselPlugin} from 'gsap/EaselPlugin';
+import {MotionPathPlugin} from 'gsap/MotionPathPlugin';
+import {PixiPlugin} from 'gsap/PixiPlugin';
+import {TextPlugin} from 'gsap/TextPlugin';
+import {ScrollToPlugin} from 'gsap/ScrollToPlugin';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+gsap.registerPlugin(
+  CSSRulePlugin,
+  Draggable,
+  EaselPlugin,
+  MotionPathPlugin,
+  PixiPlugin,
+  TextPlugin,
+  ScrollToPlugin,
+  ScrollTrigger,
+  Ease,
+);
+jQuery();
 
+console.log(MotionPathPlugin);
 TweenMax.to('.menu', 1, {
     opacity: 0,
 })
@@ -20,7 +50,7 @@ t1.to('.one', 0.3, {
     y: 9,
     autoAlpha: 0,
     delay: '-1',
-    ease: Expo.easeInOut
+    ease: Expo.easeInOut,
 })
 t1.to('.two', 0.3, {
     ease: Expo.easeInOut,
@@ -49,12 +79,14 @@ t1.from('.menu ul li', 0.3, {
 t1.reverse()
 $(document).on('click', '.toggle-btn', function() {
     t1.reversed(!t1.reversed()) // toggles the orientation
-})
+});
 $(document).on('click', '.menu-link', function() {
     t1.reversed(!t1.reversed()) // sets the orientation to reversed
-})
+});
 
-
+(function($) {
+// USE STRICT
+('use strict');
 //   Multi-menu
 $('.multi-start').on('mouseenter', function() {
     $(this).addClass('hide')
@@ -71,3 +103,4 @@ $('.multi-leave').on('mouseenter', function() {
     $('.multimenu').removeClass('active')
     $('.menu-link').removeClass('hide')
 })
+})(jQuery);

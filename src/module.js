@@ -4,6 +4,7 @@ import 'bootstrap';
 import {TimelineMax} from 'gsap';
 import main from './main';
 import preloder from './preloder';
+import fullMenu from './full-menu';
 // import Magnetichover from './Magnetic-hover';
 // import owlcarousel from './owl-carousel';
 // import customcursor from './custom-Cursor';
@@ -12,6 +13,7 @@ import preloder from './preloder';
 
 console.log(main);
 console.log(preloder);
+console.log(fullMenu);
 // console.log(Magnetichover);
 // console.log(customcursor);
 // console.log(owlcarousel);
