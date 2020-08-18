@@ -81,22 +81,14 @@ module.exports = {
               reloadAll: true,
             },
           },
-          'style-loader',
           'css-loader',
           'sass-loader',
         ],
       },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(png|svg|jpg|gif)$/,
         use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              bypassOnDebug: true, // webpack@1.x
-              disable: true, // webpack@2.x and newer
-            },
-          },
+         'file-loader',
         ],
       },
       {

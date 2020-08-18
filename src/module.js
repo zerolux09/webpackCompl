@@ -6,14 +6,14 @@ import main from './main';
 import preloder from './preloder';
 // import Magnetichover from './Magnetic-hover';
 // import owlcarousel from './owl-carousel';
-import customcursor from './custom-Cursor';
+// import customcursor from './custom-Cursor';
 
 // import plugin from './plugin';
 
 console.log(main);
 console.log(preloder);
 // console.log(Magnetichover);
-console.log(customcursor);
+// console.log(customcursor);
 // console.log(owlcarousel);
 // plugin();
 // console.log(jquery);
