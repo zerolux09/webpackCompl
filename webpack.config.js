@@ -91,7 +91,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'src/img/[name].[ext]',
+              name: 'src/img/portfolio/[name].[ext]',
             },
           },
         ],
