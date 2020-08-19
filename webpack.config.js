@@ -33,7 +33,7 @@ module.exports = {
   resolve: {
     extensions: ['.js'],
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      '@': path.resolve(__dirname, 'src/modules'),
       '@core': path.resolve(__dirname, 'src/core'),
     },
   },
@@ -49,7 +49,7 @@ module.exports = {
       jQuery: 'jquery',
     }),
     new HTMLWebpackPlugin({
-      template: 'index.html',
+      template: 'src/template/index.html',
       minify: {
         removeComments: isProd,
         collapseWhitespace: isProd,
