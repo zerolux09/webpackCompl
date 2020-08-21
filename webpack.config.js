@@ -65,8 +65,8 @@ module.exports = {
       filename: 'template/checkbox.html',
        }),
 new HTMLWebpackPlugin({
-      filename: 'template/work.html',
-      template: 'template/work.html',
+      filename: 'work.html',
+      template: 'work.html',
       minify: {
         removeComments: isProd,
         collapseWhitespace: isProd,
