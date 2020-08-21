@@ -57,8 +57,8 @@ module.exports = {
       filename: 'template/contact.html',
        }),
     new HTMLWebpackPlugin({
-      template: 'template/single-project.html',
-      filename: 'template/single-project.html',
+      template: 'single-project.html',
+      filename: 'single-project.html',
        }),
     new HTMLWebpackPlugin({
       template: 'template/checkbox.html',

@@ -1,10 +1,11 @@
 @import "~bootstrap/dist/css/bootstrap.css";
-@import "owl.carousel/dist/assets/owl.carousel.css";
+// @import "owl.carousel/dist/assets/owl.carousel.css";
 @import "custom";
 @import "responsive";
+// @import "fullsreen-showcase";
 @import "responsive-fullsreen";
 @import "brief";
-// @import "preloder";
+@import "pjax";
 
 #preloader-wapper {
   width: 100%;
@@ -442,11 +443,11 @@ body {
 	overflow-x: hidden;
 }
 .bg {
-	width: 60%;
-	height: 60%;
+	// width: 60%;
+	// height: 60%;
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	// left: 50%;
 	transform: translate(-50%, -50%);
 	overflow: hidden;
 }
@@ -458,23 +459,23 @@ body {
 	background-position: center center !important;
 }
 .project-1 {
-  background: url("../img/portfolio/1.jpg");
+  background: url("../img/previevworks/1.jpg");
   background-repeat: no-repeat;
 }
 .project-2 {
-  background: url("../img/portfolio/2.jpg");
+  background: url("../img/previevworks/2.jpg");
   background-repeat: no-repeat;
 }
 .project-3 {
-  background: url("../img/portfolio/3.jpg");
+  background: url("../img/previevworks/3.jpg");
   background-repeat: no-repeat;
 }
 .project-4 {
-  background: url("../img/portfolio/4.jpg");
+  background: url("../img/previevworks/4.jpg");
   background-repeat: no-repeat;
 }
 .project-5 {
-  background: url("../img/portfolio/5.jpg");
+  background: url("../img/previevworks/5.jpg");
   background-repeat: no-repeat;
 }
 
@@ -957,7 +958,7 @@ p.author-text {
 }
 
 .project-detail-1 {
-background:url("../../src/img/portfolio/4.jpg")no-repeat;
+background:url("../img/previevworks/4.jpg")no-repeat;
 background-size: cover;
 background-position: center center;
 }

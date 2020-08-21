@@ -5,9 +5,9 @@ import {TweenMax} from 'gsap';
 import 'popper.js';
 import 'bootstrap';
 import 'owl.carousel';
+import 'Swiper';
 import Swiper from 'Swiper';
 
-console.log(Swiper);
 console.log(TweenMax);
 console.log(jQuery);
 
