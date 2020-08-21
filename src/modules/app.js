@@ -5,7 +5,6 @@
 /* eslint-disable no-var */
 /* eslint-disable new-cap */
 /* eslint-disable guard-for-in */
-/* eslint-disable no-invalid-this */
 !(function(t) {
   const e = {};
   function i(a) {
@@ -86,36 +85,37 @@
     }
     const s = new (r(i(3)).default.GyroNorm)();
     const l = (function() {
-      function t() {
-        !(function(t, e) {
-          if (!(t instanceof e)) {
-throw new TypeError('Cannot call a class as a function');
-}
-        })(this, t),
-          (this.container = document.getElementById('gl')),
-          (this.canvas = document.createElement('canvas')),
-          this.container.appendChild(this.canvas),
-          (this.gl = this.canvas.getContext('webgl')),
-          (this.ratio = window.devicePixelRatio),
-          (this.windowWidth = window.innerWidth),
-          (this.windowHeight = window.innerHeight),
-          (this.mouseX = 0),
-          (this.mouseY = 0),
-          (this.mouseTargetX = 0),
-          (this.mouseTargetY = 0),
-          (this.imageOriginal = this.container.getAttribute(
-            'data-imageOriginal',
-          )),
-          (this.imageDepth = this.container.getAttribute('data-imageDepth')),
-          (this.vth = this.container.getAttribute('data-verticalThreshold')),
-          (this.hth = this.container.getAttribute('data-horizontalThreshold')),
-          (this.imageURLs = [this.imageOriginal, this.imageDepth]),
-          (this.textures = []),
-          (this.startTime = new Date().getTime()),
-          this.createScene(),
-          this.addTexture(),
-          this.mouseMove(),
-          this.gyro();
+      class t {
+        constructor() {
+          !(function(t, e) {
+            if (!(t instanceof e)) {
+              throw new TypeError('Cannot call a class as a function');
+            }
+          })(this, t),
+            (this.container = document.getElementById('gl')),
+            (this.canvas = document.createElement('canvas')),
+            (this.container.appendChild(this.canvas),
+              (this.gl = this.canvas.getContext('webgl')),
+              (this.ratio = window.devicePixelRatio),
+              (this.windowWidth = window.innerWidth),
+              (this.windowHeight = window.innerHeight),
+              (this.mouseX = 0),
+              (this.mouseY = 0),
+              (this.mouseTargetX = 0),
+              (this.mouseTargetY = 0),
+              (this.imageOriginal = this.container.getAttribute(
+                'data-imageOriginal')),
+              (this.imageDepth = this.container.getAttribute('data-imageDepth')),
+              (this.vth = this.container.getAttribute('data-verticalThreshold')),
+              (this.hth = this.container.getAttribute('data-horizontalThreshold')),
+              (this.imageURLs = [this.imageOriginal, this.imageDepth]),
+              (this.textures = []),
+              (this.startTime = new Date().getTime()),
+              this.createScene(),
+              this.addTexture(),
+              this.mouseMove(),
+              this.gyro());
+        }
       }
       return (
         a(t, [
@@ -333,17 +333,34 @@ throw new Error(
       const i = new Image();
       return (i.src = t), (i.onload = e), i;
     }
-    function h(t, e, i, a) {
-      (this.name = t),
-        (this.suffix = e),
-        (this.gl = a),
-        (this.program = i),
-        (this.location = a.getUniformLocation(i, t));
+    class h {
+      constructor(t, e, i, a) {
+        (this.name = t),
+          (this.suffix = e),
+          (this.gl = a),
+          (this.program = i),
+          (this.location = a.getUniformLocation(i, t));
+      }
+      set() {
+        for (var t = 'uniform' + this.suffix,
+          e = arguments.length,
+          i = Array(e),
+          a = 0; a < e; a++) {
+          i[a] = arguments[a];
+        }
+        const n = [this.location].concat(i);
+        this.gl[t].apply(this.gl, n);
+      }
     }
-    function u(t) {
-      const e = t.createBuffer();
-      t.bindBuffer(t.ARRAY_BUFFER, e),
-        t.bufferData(t.ARRAY_BUFFER, u.verts, t.STATIC_DRAW);
+    class u {
+      constructor(t) {
+        const e = t.createBuffer();
+        t.bindBuffer(t.ARRAY_BUFFER, e),
+          t.bufferData(t.ARRAY_BUFFER, u.verts, t.STATIC_DRAW);
+      }
+      render(t) {
+        t.drawArrays(t.TRIANGLE_STRIP, 0, 4);
+      }
     }
     function m(t, e, i) {
       return (

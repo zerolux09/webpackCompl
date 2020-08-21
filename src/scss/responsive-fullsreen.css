@@ -1,0 +1,226 @@
+@media (orientation: portrait) {
+    .bg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .bg img {
+        max-height: 100%;
+        max-width: auto;
+        margin: auto;
+        position: absolute;
+    }
+
+    .swiper-pagination-fraction {
+        right: 4%;
+    }
+
+    button.learn-more {
+        margin: 0;
+    }
+
+    .up-down {
+        right: 1%;
+    }
+
+    .btn-discover {
+        transform: scale(0.8);
+    }
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .title-work {
+        width: 100%;
+        transform: translateX(-50%) translateY(0);
+        left: 50%;
+        text-align: center;
+        z-index: 3;
+        margin-top: 0;
+    }
+
+    .title-work h2 {
+        font-size: 25px;
+        height: 30px;
+        margin-bottom: 10px
+    }
+
+    .social {
+		left: 30px;
+		top: 50%;
+    }
+
+    .swiper-pagination-fraction {
+        right: 4%;
+    }
+
+    .btn-discover {
+        transform: scale(0.8);
+    }
+
+    .nav-burger {
+        right: 10px;
+    }
+
+    .logo {
+        left: 30px;
+    }
+
+    .main-title h1 {
+        font-size: 45px;
+    }
+
+    .about-us-text h3 {
+        font-size: 30px;
+    }
+
+    section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .next-page h3 a {
+        font-family: 'Passion One', cursive;
+        color: #fff;
+        font-weight: 900;
+        font-size: 40px;
+        font-style: italic;
+    }
+    .detailes h3 {
+        font-size: 20px;
+    }
+
+    .about-us-text p {
+        margin-top: 30px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .title-work {
+        margin-top: 30px;
+        top: 50%;
+    }
+
+    .title-work h2 {
+        font-size: 35px;
+        height: 40px;
+    }
+
+    .btn-discover {
+        transform: scale(0.8);
+    }
+
+    .nav-burger {
+        right: 10px;
+    }
+
+    .main-title h1 {
+        font-size: 50px;
+    }
+
+    .about-us-text h3 {
+        font-size: 35px;
+    }
+
+    section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .next-page h3 a {
+        font-family: 'Passion One', cursive;
+        color: #fff;
+        font-weight: 900;
+        font-size: 50px;
+        font-style: italic;
+    }
+    .detailes h3 {
+        font-size: 30px;
+    }
+
+    .about-us-text p {
+        margin-top: 40px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .title-work {
+        margin-top: 30px;
+        top: 50%;
+    }
+
+    .title-work h2 {
+        font-size: 50px;
+        height: 50px;
+    }
+
+    .btn-discover {
+        transform: scale(0.8);
+    }
+
+    .main-title h1 {
+        font-size: 60px;
+    }
+
+    .about-us-text h3 {
+        font-size: 55px;
+    }
+
+    section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .next-page h3 a {
+        font-family: 'Passion One', cursive;
+        color: #fff;
+        font-weight: 900;
+        font-size: 60px;
+        font-style: italic;
+    }
+    .detailes h3 {
+        font-size: 40px;
+    }
+
+    .about-us-text p {
+        margin-top: 50px;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 3000px) {
+    .title-work h2 {
+       font-size: 80px;
+       height: 100px;
+    }
+
+    .social {
+        position: fixed;
+        top: 50%;
+        left: 2%;
+        z-index: 99;
+    }
+    .logo {
+        left: 3%;
+        top: 25px;
+    }
+
+    .nav-burger {
+        top: 25px;
+    }
+    .social a {
+        font-size: 14px;
+        color: #fff;
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        line-height: 47px;
+        text-align: center;
+        border: 2px solid rgba(255, 255, 255, 0);
+        border-radius: 100%;
+    }
+    .social a:hover {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+}

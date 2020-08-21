@@ -49,7 +49,24 @@ module.exports = {
       jQuery: 'jquery',
     }),
     new HTMLWebpackPlugin({
-      template: 'src/template/index.html',
+      template: 'index.html',
+      filename: 'index.html',
+       }),
+    new HTMLWebpackPlugin({
+      template: 'template/contact.html',
+      filename: 'template/contact.html',
+       }),
+    new HTMLWebpackPlugin({
+      template: 'template/single-project.html',
+      filename: 'template/single-project.html',
+       }),
+    new HTMLWebpackPlugin({
+      template: 'template/checkbox.html',
+      filename: 'template/checkbox.html',
+       }),
+new HTMLWebpackPlugin({
+      filename: 'template/work.html',
+      template: 'template/work.html',
       minify: {
         removeComments: isProd,
         collapseWhitespace: isProd,

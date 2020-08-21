@@ -1,4 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+@import "custom";
+@import "responsive";
+@import "responsive-fullsreen";
+@import "brief";
+// @import "preloder";
 
 #preloader-wapper {
   width: 100%;
@@ -6,7 +11,7 @@
   top: 0;
   overflow: hidden;
   position: fixed;
-  z-index: 1;
+//   z-index: 1;
   display: flex; }
   #preloader-wapper::before {
     position: absolute;
@@ -726,11 +731,12 @@ button {
 	}
 }
 .about-bg {
-	// background: url("../img/portfolio/promo.jpg") center center no-repeat;
+	background: url("../img/portfolio/promo.jpg") center center no-repeat;
     background-size: cover;
     z-index: 10;
 }
 .about-us-text {
+	z-index:1;
 	h3 {
 		font-size: 34px;
 		font-family: "Passion One", cursive;

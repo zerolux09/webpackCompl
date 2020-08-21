@@ -11,7 +11,7 @@ import revealBlock from './modules/reveal-Block';
 import magnetichover from './modules/magnetic-hover';
 import customcursor from './modules/custom-Cursor';
 import owlcarousel from 'owl-carousel/owl-carousel/owl.carousel';
-import app from './modules/app';
+// import app from './modules/app';
 
 console.log(main);
 console.log(preloder);
@@ -22,7 +22,7 @@ console.log(revealBlock);
 console.log(magnetichover);
 console.log(customcursor);
 console.log(owlcarousel);
-console.log(app);
+// console.log(app);
 // plugin();
 // console.log(jquery);
 jquery();
