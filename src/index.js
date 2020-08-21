@@ -2,10 +2,12 @@ import './scss/index.scss';
 // import 'owl.carousel/dist/assets/owl.carousel.css';
 import './module';
 import 'gsap';
-import 'owl.carousel';
 import 'swiper';
 import $ from 'jquery';
+import 'jquery';
+import 'popper.js';
 import 'bootstrap';
+import 'owl.carousel';
 import aboutBg from './img/portfolio/promo.jpg';
 
 import ImageOne from './img/portfolio/1.jpg';
