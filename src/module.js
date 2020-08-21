@@ -11,7 +11,7 @@ import revealBlock from './modules/reveal-Block';
 import magnetichover from './modules/magnetic-hover';
 import customcursor from './modules/custom-Cursor';
 import owlcarousel from 'owl-carousel/owl-carousel/owl.carousel';
-import fullsreenshowcase from '/modules/fullsreen-showcase';
+import fullsreenshowcase from './modules/fullsreen-showcase';
 // import app from './modules/app';
 
 console.log(main);

@@ -1,14 +1,17 @@
 /* eslint-disable no-var */
-import Swiper from 'Swiper';
-import TweenMax from 'gsap';
 import jQuery from 'jQuery';
+import {TweenMax} from 'gsap';
+import 'popper.js';
+import 'bootstrap';
+import 'owl.carousel';
+import Swiper from 'Swiper';
 
 console.log(Swiper);
 console.log(TweenMax);
 console.log(jQuery);
 
-
-var vertSlide = new Swiper('.swiper-container', {
+(function($) {
+  var vertSlide = new Swiper('.swiper-container', {
     direction: 'vertical',
     slidesPerView: 1,
     loop: false,
@@ -17,134 +20,125 @@ var vertSlide = new Swiper('.swiper-container', {
     spaceBetween: 0,
     mousewheel: true,
     pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
+      el: '.swiper-pagination',
+      type: 'fraction',
     },
+  });
 
-});
-
-setTimeout(() => {
+  setTimeout(() => {
     vertSlide.update();
-}, 300)
+  }, 300);
 
-vertSlide.on('slideChange', function() {
+  vertSlide.on('slideChange', function() {
     TweenMax.to('.overlay-bg', 0.3, {
-        width: '100%',
-    })
+      width: '100%',
+    });
 
     TweenMax.to('.bg', 0.3, {
-        x: '-50%',
-        y: '-50%',
-    })
+      x: '-50%',
+      y: '-50%',
+    });
     TweenMax.to('.over-1', 0.5, {
-       height: '100%',
-    })
+      height: '100%',
+    });
     TweenMax.to('.over-2', 0.5, {
-        height: '100%',
-        delay: '0.1'
-     })
-     TweenMax.to('.over-3', 0.5, {
-        height: '100%',
-        delay: '0.2'
-     })
-     TweenMax.to('.over-4', 0.5, {
-        height: '100%',
-        delay: '0.3'
-     })
-     TweenMax.to('.over-5', 0.5, {
-        height: '100%',
-        delay: '0.4'
-     })
-});
+      height: '100%',
+      delay: '0.1',
+    });
+    TweenMax.to('.over-3', 0.5, {
+      height: '100%',
+      delay: '0.2',
+    });
+    TweenMax.to('.over-4', 0.5, {
+      height: '100%',
+      delay: '0.3',
+    });
+    TweenMax.to('.over-5', 0.5, {
+      height: '100%',
+      delay: '0.4',
+    });
+  });
 
-vertSlide.on('slideChangeTransitionEnd', function() {
+  vertSlide.on('slideChangeTransitionEnd', function() {
     TweenMax.to('.over-1', 0.5, {
-        height: 0,
-     })
-     TweenMax.to('.over-2', 0.5, {
-         height: 0,
-         delay: '0.1'
-      })
-      TweenMax.to('.over-3', 0.5, {
-         height: '0',
-         delay: '0.2'
-      })
-      TweenMax.to('.over-4', 0.5, {
-         height: 0,
-         delay: '0.3'
-      })
+      height: 0,
+    });
+    TweenMax.to('.over-2', 0.5, {
+      height: 0,
+      delay: '0.1',
+    });
+    TweenMax.to('.over-3', 0.5, {
+      height: '0',
+      delay: '0.2',
+    });
+    TweenMax.to('.over-4', 0.5, {
+      height: 0,
+      delay: '0.3',
+    });
 
-      TweenMax.to('.over-5', 0.5, {
-        height: 0,
-        delay: '0.4'
-     })
+    TweenMax.to('.over-5', 0.5, {
+      height: 0,
+      delay: '0.4',
+    });
     TweenMax.to('.overlay-bg', 1, {
-        width: '0',
-        delay: '1',
-    })
+      width: '0',
+      delay: '1',
+    });
 
     TweenMax.to('.bg', 0.4, {
-        scale: '1',
-        x: '-50%',
-        y: '-50%',
-        skewX: '0',
-        skewY: '0',
-
-    })
+      scale: '1',
+      x: '-50%',
+      y: '-50%',
+      skewX: '0',
+      skewY: '0',
+    });
 
     TweenMax.to('.head-text', 0.3, {
-        autoAlpha: 1,
-        delay: 0.2,
-    })
+      autoAlpha: 1,
+      delay: 0.2,
+    });
     TweenMax.to('.tag-work', 0.3, {
-        autoAlpha: 1,
-        delay: 0.4
-    })
+      autoAlpha: 1,
+      delay: 0.4,
+    });
     TweenMax.to('.learn-more', 0.3, {
-        autoAlpha: 1,
-        delay: 0.6
-    })
-});
+      autoAlpha: 1,
+      delay: 0.6,
+    });
+  });
 
-vertSlide.on('slideNextTransitionStart', function() {
+  vertSlide.on('slideNextTransitionStart', function() {
     TweenMax.to('.head-text', 0.3, {
-        autoAlpha: 0,
-        delay: 0.4,
-    })
+      autoAlpha: 0,
+      delay: 0.4,
+    });
     TweenMax.to('.tag-work', 0.3, {
-        autoAlpha: 0,
-        delay: 0.4,
-    })
+      autoAlpha: 0,
+      delay: 0.4,
+    });
     TweenMax.to('.learn-more', 0.3, {
-        autoAlpha: 0,
-        delay: 0.4,
-    })
-});
-vertSlide.on('slideNextTransitionEnd', function() {
+      autoAlpha: 0,
+      delay: 0.4,
+    });
+  });
+  vertSlide.on('slideNextTransitionEnd', function() {});
 
-
-});
-
-
-vertSlide.on('slidePrevTransitionStart', function() {
+  vertSlide.on('slidePrevTransitionStart', function() {
     TweenMax.to('.head-text', 0.3, {
-        autoAlpha: 0,
-        delay: 0.4,
-    })
+      autoAlpha: 0,
+      delay: 0.4,
+    });
     TweenMax.to('.tag-work', 0.3, {
-        autoAlpha: 0,
-        delay: 0.4,
-    })
+      autoAlpha: 0,
+      delay: 0.4,
+    });
     TweenMax.to('.learn-more', 0.3, {
-        autoAlpha: 0,
-        delay: 0.4,
-    })
-});
-vertSlide.on('slidePrevTransitionEnd', function() {
+      autoAlpha: 0,
+      delay: 0.4,
+    });
+  });
+  vertSlide.on('slidePrevTransitionEnd', function() {});
 
-
-});
-(function($) {
   $('.to-up').on('click', function() {
     vertSlide.slidePrev();
   });

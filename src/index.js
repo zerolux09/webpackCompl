@@ -1,6 +1,9 @@
 import './scss/index.scss';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
 import './module';
 import 'gsap';
+import 'owl.carousel';
+import 'swiper';
 import $ from 'jquery';
 import 'bootstrap';
 import aboutBg from './img/portfolio/promo.jpg';
